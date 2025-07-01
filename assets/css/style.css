@@ -1,0 +1,756 @@
+@charset "utf-8";
+
+/*
+        Resets
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0
+}
+
+:focus {
+    outline: 0
+}
+
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+        body Structure
+*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #454545;
+    overflow-x: hidden !important;
+}
+
+/*
+        Typography
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+div,
+p,
+a,
+li,
+td {
+    -webkit-text-size-adjust: none;
+}
+
+html,
+html a {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 5px 0;
+    line-height: normal !important;
+}
+
+/* h1 {
+    font-size: 40px;
+    font-weight: 800;
+} */
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 37px;
+}
+
+/* h3 {
+    font-size: 26px;
+    font-weight: 400;
+} */
+
+h4 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+p span,
+p strong {
+    font-weight: 800;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+
+
+
+/*misc*/
+.heading-center {
+    display: block;
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.heading-center h2 {
+    margin-bottom: 0;
+}
+
+.heading {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.heading small {
+    font-size: 18px;
+    color: #014397;
+}
+
+.heading small a {
+    color: inherit;
+}
+
+.heading:after,
+.heading-center:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #014397;
+    position: absolute;
+    bottom: 0;
+}
+
+.heading-center:after {
+    margin: 0 auto;
+    left: 0%;
+    right: 0%;
+}
+
+.heading:after {
+    left: 0%;
+}
+
+.heading span,
+.heading-center span {
+    color: #014397;
+}
+
+.btn-transparent {
+    display: inline-block;
+    padding: 8px 15px;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background: #4d4d4d !important;
+    border-color: transparent !important;
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar {
+    min-height: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.btn {
+    border: none;
+    transition: all 300ms ease-in-out;
+    border-radius: 0 !important;
+}
+
+.btn-default {
+    border: solid 1px #ddd !important;
+
+    background-color: orangered;
+    color: white;
+}
+
+.btn-primary {
+    background: #014397 !important;
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #4d4d4d !important;
+    color: #fff;
+}
+
+.space5 {
+    display: block;
+    clear: both;
+    padding: 5px 0;
+}
+
+.space10 {
+    display: block;
+    clear: both;
+    padding: 10px 0;
+}
+
+.space50 {
+    display: block;
+    padding: 50px 0;
+    clear: both;
+}
+
+.space30 {
+    display: block;
+    padding: 30px 0;
+    clear: both;
+}
+
+.space15 {
+    display: block;
+    padding: 15px;
+    clear: both;
+}
+
+.centertext,
+.center {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+
+/**********scrollUp**********/
+.scrollup {
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    color: #fff;
+    font-size: 26px;
+    display: none;
+    background: #014397;
+    z-index: 200;
+}
+
+.scrollup:hover {
+    background: #4d4d4d;
+    opacity: 1;
+    color: #fff;
+}
+
+
+
+
+/* ------------------------------------------ */
+
+/* *p{ 
+    margin:0%;
+    padding:0%;
+    scroll-behavior:smooth;
+    }
+ body{ width:100%;
+       overflow-x:hidden;
+       margin:0%;
+       
+     }  */
+
+
+
+
+
+
+
+
+
+
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.active {
+    color: #95c943;
+    background-color: #000;
+}
+
+
+.bannersection {
+    clear: both;
+    position: relative;
+}
+
+.bannersection img {
+    /* padding-top: 10px; */
+    position: relative;
+}
+
+.bannersection .container-fluid {
+    padding: 0%;
+}
+
+.bannersection h1 {
+    color: #95c943;
+    position: absolute;
+    /* font-family: sans-serif; */
+    top: 64%;
+    left: 187px;
+    z-index: 99;
+    font: revert;
+    font-size: 55px;
+}
+
+.bannersection p {
+    position: absolute;
+    top: 80%;
+    left: 194px;
+    z-index: 99;
+    font-size: 23px;
+    color: #fff;
+}
+
+
+.servicesection {
+    background-color: rgb(238, 244, 244);
+    padding-bottom: 5%;
+}
+
+.servicesection h1 {
+    text-align: center;
+    padding-top: 4%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.servicesection p {
+    text-align: center;
+    color: #0000008a;
+    padding-left: 17px;
+    padding-right: 20px;
+    font-size: 15px;
+    padding-top: 9px;
+    padding-bottom: 4%;
+}
+
+.service {
+    padding-bottom: 5%;
+    text-align: center;
+    padding-top: 10%;
+    /* font-size: 30px; */
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    height: 250px;
+}
+
+.service i {
+    color: #95c943;
+    font-size: 40px;
+}
+
+.service h1 {
+    font-size: 25px;
+}
+
+
+.processsection {
+    /* padding-top: 5%; */
+    padding-bottom: 5%;
+    background-color: #95c943;
+}
+
+.processsection .design {
+    background-color: #fff;
+    padding-bottom: 10%;
+    /* padding-left: 3%;
+    padding-right: 3%; */
+}
+
+.design i {
+    color: #95c943;
+    /* font-size: 48px; */
+    font-size: xx-large;
+    font-weight: inherit;
+    padding-left: 45%;
+    padding-top: 10%;
+}
+
+
+.processsection-row {
+    background-color: #fff;
+}
+
+.processsection .design h1 {
+    text-align: left;
+    position: absolute;
+    top: 162px;
+    background-color: #ffffff85;
+    width: 89%;
+    width: 350px;
+    font-size: 24px;
+    font-size: 25px;
+    height: 19%;
+    padding-left: 10px;
+}
+
+.processsection h1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.processsection p {
+    text-align: center;
+    color: #000000;
+    line-height: 21px;
+    padding-bottom: 3%;
+    padding-top: 1%;
+
+}
+
+.processsection .design p {
+    text-align: revert;
+    color: #0000008a;
+    line-height: 20px;
+    padding-bottom: 0%;
+    padding-left: 27px;
+}
+
+.processsection col-md-4 {
+    padding-bottom: 10%;
+    background-color: #fff;
+}
+
+
+.businesssection {
+    padding-bottom: 5%;
+}
+
+.businesssection h1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.businesssection p {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.businesssection .links {
+    /* text-align: left; */
+    line-height: 300%;
+}
+
+.businesssection i {
+    color: #95c943;
+    font-size: 20px;
+    /* padding-left: 25px; */
+}
+
+.business p {
+    text-align: left;
+}
+
+.businesssection button {
+    color: white;
+    background-color: #95c943;
+    /* margin-left: 35px; */
+    margin-top: 19px;
+}
+
+
+.footersection {
+    background-color: #000000d6;
+    padding-top: 3%;
+    text-align: left;
+}
+
+.footersection a {
+    color: #ffffffa6;
+    line-height: 37px;
+    font-size: 13px;
+}
+
+.footersection h3 {
+    padding-bottom: 4%;
+    font-size: 18px;
+}
+
+.footersection .container {
+    color: #ffffffa6;
+}
+
+.footersection p {
+    line-height: 100%;
+    font-size: 13px;
+}
+
+
+.quicklink :hover {
+    color: green;
+}
+
+@media(max-width:768px) {
+
+
+
+    .navbar-nav {
+        margin: 00px 00px;
+    }
+
+    .bannersection h1 {
+        color: #95c943;
+        position: absolute;
+        /* font-family: sans-serif; */
+        top: 64%;
+        left: 54px;
+        z-index: 99;
+        font: revert;
+        font-size: 14px;
+    }
+
+
+    .bannersection p {
+        position: absolute;
+        top: 73%;
+        left: 59px;
+        z-index: 99;
+        font-size: 6px;
+        color: #fff;
+    }
+
+    .service {
+        padding-bottom: 5%;
+        text-align: center;
+        padding-top: 10%;
+        /* font-size: 30px; */
+        font-family: 'Poppins', sans-serif;
+        background-color: #fff;
+        height: 250px;
+        margin: 16px;
+    }
+
+    .processsection .design h1 {
+        text-align: left;
+        position: absolute;
+        top: 140px;
+        background-color: #ffffff85;
+        width: 89%;
+        width: 315px;
+        font-size: 24px;
+        font-size: 25px;
+        height: 19%;
+        padding-left: 10px;
+    }
+
+
+    .processsection .design {
+        background-color: #fff;
+        padding-bottom: 10%;
+        margin-top: 15px;
+    }
+
+    .businesssection .links {
+        /* text-align: left; */
+        line-height: 284%;
+        font-size: 11px;
+    }
+
+    .businesssection button {
+        color: white;
+        background-color: #95c943;
+        /* margin-left: 35px; */
+        margin-top: 19px;
+        margin-bottom: 22px;
+    }
+
+    .footersection h3 {
+        padding-bottom: 4%;
+        font-size: 25px;
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+
+    .footersection a {
+        color: #ffffffa6;
+        line-height: normal;
+        font-size: 15px;
+    }
+
+
+
+    .footersection p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: normal;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
